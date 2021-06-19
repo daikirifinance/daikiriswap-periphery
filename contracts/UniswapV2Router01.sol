@@ -1,7 +1,8 @@
-pragma solidity =0.6.6;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity =0.7.3;
 
-import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol';
-import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
+import '@daikiri/daikiriswap-core/contracts/interfaces/IUniswapV2Factory.sol';
+import '@daikiri/daikiriswap-lib/contracts/libraries/TransferHelper.sol';
 
 import './libraries/UniswapV2Library.sol';
 import './interfaces/IUniswapV2Router01.sol';
@@ -17,7 +18,7 @@ contract UniswapV2Router01 is IUniswapV2Router01 {
         _;
     }
 
-    constructor(address _factory, address _WETH) public {
+    constructor(address _factory, address _WETH) {
         factory = _factory;
         WETH = _WETH;
     }

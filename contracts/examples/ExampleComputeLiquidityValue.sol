@@ -1,4 +1,5 @@
-pragma solidity =0.6.6;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity =0.7.3;
 
 import '../libraries/UniswapV2LiquidityMathLibrary.sol';
 
@@ -7,7 +8,7 @@ contract ExampleComputeLiquidityValue {
 
     address public immutable factory;
 
-    constructor(address factory_) public {
+    constructor(address factory_) {
         factory = factory_;
     }
 

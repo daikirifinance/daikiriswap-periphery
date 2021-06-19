@@ -1,8 +1,9 @@
-pragma solidity =0.6.6;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity =0.7.3;
 
-import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol';
-import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol';
-import '@uniswap/lib/contracts/libraries/FixedPoint.sol';
+import '@daikiri/daikiriswap-core/contracts/interfaces/IUniswapV2Factory.sol';
+import '@daikiri/daikiriswap-core/contracts/interfaces/IUniswapV2Pair.sol';
+import '@daikiri/daikiriswap-lib/contracts/libraries/FixedPoint.sol';
 
 import '../libraries/SafeMath.sol';
 import '../libraries/UniswapV2Library.sol';
@@ -39,7 +40,7 @@ contract ExampleSlidingWindowOracle {
     // mapping from pair address to a list of price observations of that pair
     mapping(address => Observation[]) public pairObservations;
 
-    constructor(address factory_, uint windowSize_, uint8 granularity_) public {
+    constructor(address factory_, uint windowSize_, uint8 granularity_) {
         require(granularity_ > 1, 'SlidingWindowOracle: GRANULARITY');
         require(
             (periodSize = windowSize_ / granularity_) * granularity_ == windowSize_,

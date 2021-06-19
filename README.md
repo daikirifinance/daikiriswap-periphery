@@ -1,11 +1,11 @@
-# Uniswap V2
+# DaikiriSwap
 
-[![Actions Status](https://github.com/Uniswap/uniswap-v2-periphery/workflows/CI/badge.svg)](https://github.com/Uniswap/uniswap-v2-periphery/actions)
-[![npm](https://img.shields.io/npm/v/@uniswap/v2-periphery?style=flat-square)](https://npmjs.com/package/@uniswap/v2-periphery)
+[![Actions Status](https://github.com/DaikiriFinance/uniswap-v2-periphery/workflows/CI/badge.svg)](https://github.com/DaikiriFinance/daikiriswap-periphery/actions)
+[![npm](https://img.shields.io/npm/v/@uniswap/v2-periphery?style=flat-square)](https://npmjs.com/package/@daikiri/daikiriswap-periphery)
 
-In-depth documentation on Uniswap V2 is available at [uniswap.org](https://uniswap.org/docs).
+In-depth documentation on DaikiriFinance is available at [uniswap.org](https://daikiri.finance/docs).
 
-The built contract artifacts can be browsed via [unpkg.com](https://unpkg.com/browse/@uniswap/v2-periphery@latest/).
+The built contract artifacts can be browsed via [unpkg.com](https://unpkg.com/browse/@uniswap/daikiriswap-periphery@latest/).
 
 # Local Development
 

@@ -1,9 +1,10 @@
-pragma solidity >=0.5.0;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity =0.7.3;
 
-import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol';
-import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol';
-import '@uniswap/lib/contracts/libraries/Babylonian.sol';
-import '@uniswap/lib/contracts/libraries/FullMath.sol';
+import '@daikiri/daikiriswap-core/contracts/interfaces/IUniswapV2Pair.sol';
+import '@daikiri/daikiriswap-core/contracts/interfaces/IUniswapV2Factory.sol';
+import '@daikiri/daikiriswap-lib/contracts/libraries/Babylonian.sol';
+import '@daikiri/daikiriswap-lib/contracts/libraries/FullMath.sol';
 
 import './SafeMath.sol';
 import './UniswapV2Library.sol';

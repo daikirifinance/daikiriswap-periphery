@@ -1,6 +1,7 @@
-pragma solidity =0.6.6;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity =0.7.3;
 
-import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Callee.sol';
+import '@daikiri/daikiriswap-core/contracts/interfaces/IUniswapV2Callee.sol';
 
 import '../libraries/UniswapV2Library.sol';
 import '../interfaces/V1/IUniswapV1Factory.sol';
@@ -14,7 +15,7 @@ contract ExampleFlashSwap is IUniswapV2Callee {
     address immutable factory;
     IWETH immutable WETH;
 
-    constructor(address _factory, address _factoryV1, address router) public {
+    constructor(address _factory, address _factoryV1, address router) {
         factoryV1 = IUniswapV1Factory(_factoryV1);
         factory = _factory;
         WETH = IWETH(IUniswapV2Router01(router).WETH());

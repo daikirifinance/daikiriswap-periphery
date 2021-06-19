@@ -1,8 +1,9 @@
-pragma solidity =0.6.6;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity =0.7.3;
 
-import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol';
-import '@uniswap/lib/contracts/libraries/Babylonian.sol';
-import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
+import '@daikiri/daikiriswap-core/contracts/interfaces/IUniswapV2Pair.sol';
+import '@daikiri/daikiriswap-lib/contracts/libraries/Babylonian.sol';
+import '@daikiri/daikiriswap-lib/contracts/libraries/TransferHelper.sol';
 
 import '../libraries/UniswapV2LiquidityMathLibrary.sol';
 import '../interfaces/IERC20.sol';
@@ -16,7 +17,7 @@ contract ExampleSwapToPrice {
     IUniswapV2Router01 public immutable router;
     address public immutable factory;
 
-    constructor(address factory_, IUniswapV2Router01 router_) public {
+    constructor(address factory_, IUniswapV2Router01 router_) {
         factory = factory_;
         router = router_;
     }
